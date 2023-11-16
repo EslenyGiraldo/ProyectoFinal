@@ -22,10 +22,10 @@ return new class extends Migration
             $table->string("email")->comment("Email del Usuario");
 
             $table->unsignedBigInteger("sede_id")->comment("ID de la sede");
-            $table->foreign("sede_id")->references("id")->on("sedes");
+            $table->foreign("sede_id")->references("id")->on("campuses");
 
             $table->unsignedBigInteger("deporte_id")->comment("ID del deporte");
-            $table->foreign("deporte_id")->references("id")->on("deportes");
+            $table->foreign("deporte_id")->references("id")->on("sports");
 
             $table->string("password")->comment("Contraseña del Usuario");
 
