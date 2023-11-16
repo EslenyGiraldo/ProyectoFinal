@@ -3,10 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdministratorsController;
-// use App\Http\Controllers\CampusController;
-// use App\Http\Controllers\SportsController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ApiController;
+
 
 
 
@@ -40,3 +39,6 @@ Route::get('/users_edit/{id}', [UsersController::class, 'edit'])->name('users.ed
 
 
 Route::get('/obtener-datos', [ApiController::class, 'obtenerDatos']);
+
+Route::get('/get_users', [UserController::class, 'getUsers']);
+
