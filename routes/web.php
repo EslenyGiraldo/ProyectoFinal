@@ -18,6 +18,3 @@ Route::put('/users/{id}', [UsersController::class, 'update'])->name('users.updat
 Route::get('/users_edit/{id}', [UsersController::class, 'edit'])->name('users.edit');
 
 
-// Route::get('/administrators', [AdministratorsController::class, 'index'])->name('administrators.index');
-// Route::put('/administrators/{id}', [AdministratorsController::class, 'update'])->name('administrators.update');
-// Route::get('/administrators_edit/{id}', [AdministratorsController::class, 'edit'])->name('administrators.edit');
