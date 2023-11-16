@@ -76,4 +76,11 @@ class UsersController extends Controller
         $users->delete();
         return redirect()->route('users.index');
     }
+
+    public function getUsers()
+    {
+        $users = User::all();
+
+        return response()->json(['users' => $users]);
+    }
 }
