@@ -52,26 +52,26 @@
                                 <div class="row align-items-start">
                                     <div class="col">
                                         <div>
-                                            <label for="nombre">Nombre:
-                                                <input type="text" id="nombre" name="nameU" class="form-control form-control-lg" placeholder="Nombre" required value="">
+                                            <label for="name">Nombre:
+                                                <input type="text" id="name" name="nameU" class="form-control form-control-lg" placeholder="Nombre" required value="">
                                             </label>
                                         </div>
                                         <br>
                                         <div>
-                                            <label for="apellido">Apellido:
-                                                <input type="text" id="apellido" name="apellidoU" class="form-control form-control-lg" placeholder="Apellido" required value="">
+                                            <label for="lastname">Apellido:
+                                                <input type="text" id="lastname" name="lastnameU" class="form-control form-control-lg" placeholder="Apellido" required value="">
                                             </label>
                                         </div>
                                         <br>
                                         <div>
-                                            <label for="numcel">Número de Celular:
-                                                <input type="text" id="numcel" name="numcelU" class="form-control form-control-lg" placeholder="Número de Celular" required value="">
+                                            <label for="number">Número de Celular:
+                                                <input type="text" id="number" name="numberU" class="form-control form-control-lg" placeholder="Número de Celular" required value="">
                                             </label>
                                         </div>
                                         <br>
                                         <div>
-                                            <label for="tipodoc">Tipo Doc.:
-                                                <select  id="tipodoc" name="tipodocU" change="" class="form-control form-control-lg" required value="">
+                                            <label for="document">Tipo Doc.:
+                                                <select  id="document" name="documentU" change="" class="form-control form-control-lg" required value="">
                                                     <option value="Cédula De Ciudadanía" id="01">C.C</option>
                                                     <option value="Tarjeta De Identidad" id="02">T.I</option>
                                                     <option value="Cédula De Extranjería" id="03">C.E</option>
