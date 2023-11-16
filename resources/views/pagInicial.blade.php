@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container-fluid">
                 <a href="">
-                    <img src="{{ asset('Imagenes/icono1.ico') }}" alt="" style="width:50px;">
+                    <img src="{{ asset('Imagenes/icono1.ico') }}" alt="Icono" style="width:50px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
                     
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="btn btn-dark" aria-current="page" href="{{ url('inicioSesion') }}">Iniciar Sesión</a>
+                            <a class="btn btn-dark" aria-current="page" href="{{ url('/Administradores/pagInicio') }}">Iniciar Sesión</a>
                         </li>
                         <span>&nbsp;&nbsp;&nbsp;</span>
                         <li class="nav-item">
@@ -45,12 +45,12 @@
                         <div class="card-body text-bg-light">
                             <h4>TORNEO DE FÚTBOL 5</h4>
                             <p>En el mes de septiembre se está realizando el torneo interno de fútbol 5, en el cual participan los estudiantes de la universidad sacando sus propios equipos.</p>
-                            <img src="canchaf5.png" alt="">
+                            <img src="{{ asset('canchaf5.png') }}" alt="Fútbol">
                         </div>
                         <div class="card-body text-bg-light">
                             <h4>CLASES DE RITMOS LATINOS</h4>
                             <p>En las sedes de Palogrande y La Nubia existe un curso de baile en donde todos los estudiantes de la universidad pueden aprender a bailar y desempeñarse de una mejor manera. Para participar, hay que inscribirse mediante el Sibu.</p>
-                            <img src="baile.png" alt="" width="300px">
+                            <img src="{{ asset('baile.png') }}" alt="Bailes" width="300px">
                         </div>
                         <div class="card-body text-bg-light">
                             <h4></h4>

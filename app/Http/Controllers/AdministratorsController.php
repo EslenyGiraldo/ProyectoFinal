@@ -57,4 +57,8 @@ class AdministratorsController extends Controller
     {
         //
     }
+
+    public function pagInicio(){
+        return view('Administradores.modificarDatosAdmin');
+    }
 }
