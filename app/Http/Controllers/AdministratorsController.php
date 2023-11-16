@@ -42,10 +42,10 @@ class AdministratorsController extends Controller
         $administrator = Administrator::find($id);
         $administrator->nombre = $request->nameU;
         $administrator->apellido = $request->apellidoU;
-        $administrator->numcel0;
-        $administrator->deporte;
-        $administrator;
-        $administrator;
+        $administrator->numcel = $request->numcelU;
+        $administrator->deporte = $request->deporteU;
+        $administrator->sede = $request->sedeU;
+        $administrator->passw = $request->passwU;
         $administrator->save();
         return redirect()->route('administrators.index');
     }
