@@ -168,6 +168,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class
     ])->toArray(),
 
     /*
@@ -186,15 +188,5 @@ return [
     ])->toArray(),
 
 
-    'providers' => [
-        // ...
-        Maatwebsite\Excel\ExcelServiceProvider::class,
-    ],
-    
-    'aliases' => [
-        // ...
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-    ],
-    
     
 ];

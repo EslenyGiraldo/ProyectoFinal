@@ -11,13 +11,20 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('users.registroDatos', compact('users'));
+        return view('users.index')->with ('users', $users);
     }
 
 
-    public function create()
+    public function generarPDF()
     {
-        //
+        $users = User::all();
+        $pdf = PDF::loadView('productos.download', compact('users'));
+        return $pdf->download('users.pdf');
+    }
+
+    public function generarExcel()
+    {
+        return Excel:: download(new UsersExport, 'users.xlsx');
     }
 
     public function store(Request $request)
