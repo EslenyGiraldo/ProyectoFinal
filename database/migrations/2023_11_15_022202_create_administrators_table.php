@@ -17,10 +17,10 @@ return new class extends Migration
             $table->string("last_name")->comment("Apellido del Administrador");
 
             $table->unsignedBigInteger("sede_id")->comment("ID de la sede");
-            $table->foreign("sede_id")->references("id")->on("sedes");
+            $table->foreign("sede_id")->references("id")->on("campuses");
 
             $table->unsignedBigInteger("deporte_id")->comment("ID del deporte");
-            $table->foreign("deporte_id")->references("id")->on("deportes");
+            $table->foreign("deporte_id")->references("id")->on("sports");
 
             $table->string("password")->comment("Contraseña del Administrador");
 

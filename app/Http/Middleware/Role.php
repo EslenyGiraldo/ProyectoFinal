@@ -13,7 +13,6 @@ class Role
         $roleName=strtolower($request->user()->role->label);
         if(in_array($roleName,$newRole))
             return abort(403,__('Unauthorized'));
-
         return $next($request);
     }
 }

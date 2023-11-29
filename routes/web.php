@@ -8,6 +8,9 @@ use App\Http\Controllers\ApiController;
 use App\Http\Middleware\Role;
 
 
+Route::get('/', function(){
+    return view('registroDatos');
+});
 
 
 Route::middleware(['auth','role:administrators'])->group(function(){
@@ -34,4 +37,5 @@ Route::middleware(['auth','role:obtener-datos'])->group(function(){
 Route::middleware(['auth','role:get_users'])->group(function(){
     Route::get('/get_users', [UserController::class, 'get_users']);
 });
+
 
