@@ -180,7 +180,7 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-
+   
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
@@ -195,5 +195,6 @@ return [
         // ...
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
+    
     
 ];
