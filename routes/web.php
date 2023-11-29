@@ -39,3 +39,8 @@ Route::middleware(['auth','role:get_users'])->group(function(){
 });
 
 
+
+Route::resource('/users', [UserController::class]);
+Route::get('/download-pdf', [ApiController::class, 'generarPDF'])->name('descargar-pdf');
+Route::get('/download-excel', [ApiController::class, 'generarExcel'])->name('descargar-excel');
+
